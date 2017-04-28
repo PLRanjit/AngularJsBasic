@@ -1,0 +1,29 @@
+<div class="content">
+  <input type="text" name="" ng-model="faveMe" placeholder="enter name" />
+  <p>{{num[2]}}</p>
+  <p>your favme : {{faveMe}}</p>
+  <ul>
+    <li ng-repeat="a in abc">{{a}}</li>
+  </ul>
+
+  <button ng-click="order = 'name'">Order By name</button>
+  <button ng-click="order = 'age'">Order By Balance</button>
+  <p>{{message}}</p>
+  <input type="text" name="" ng-model="search" />
+  <ul id="chk-list">
+    <li ng-repeat="a in chk | orderBy : order | filter : search" ng-show="a.age > 15">
+      <!--ng-hide="a.age > 55"-->
+      <img ng-src="{{a.thum}}" style="margin: -12px 10px 0 0; float : left; width : 50px;" ng-show="a.thum">
+      <h3>Name : {{a.name}}<br> Balance: {{a.age | currency:'&#8377;'}} </h3>
+      <div class="remove" ng-click="removeMe(a)">x</div>
+      <span class="belt" style="background:{{a.color}}">Charge : {{a.charge}}</span></li>
+  </ul>
+  <form ng-submit="addNew()">
+    <input type="text" placeholder="name" ng-model="NChk.name" />
+    <input type="text" placeholder="age" ng-model="NChk.age" />
+    <input type="text" placeholder="charge" ng-model="NChk.charge" />
+    <input type="text" placeholder="color" ng-model="NChk.color" />
+    <input type="submit" value="Add new Chk" />
+  </form>
+  <a href="" ng-click="removeAll()">Remove All</a>
+</div>

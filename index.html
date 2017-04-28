@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <base href="/"/>
+  <title>Angular Playlist</title>
+  <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="app/lib/angular.min.js"></script>
+  <script type="text/javascript" src="app/lib/angular-route.min.js"></script>
+  <script type="text/javascript" src="app\lib\angular-animate.min.js"></script>
+  <script src="app\app.js"></script>
+</head>
+
+<body ng-init="abc = ['xdx', 'wedwed', 'd2de2e']">
+  <ng-include src="'header.html'"></ng-include>
+  <!--<head ng-include="'header.html'"></head>-->
+  <main ng-view></main>
+</body>
+
+</html>

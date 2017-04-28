@@ -1,0 +1,25 @@
+[{
+  "name": "dandur",
+  "age": 56,
+  "charge": "F",
+  "color": "orange",
+  "thum": "content/img/c.jpg"
+}, {
+  "name": "pinto",
+  "age": 37,
+  "charge": "E",
+  "color": "blue",
+  "thum": "content/img/b.png"
+}, {
+  "name": "jagu",
+  "age": 23,
+  "charge": "C",
+  "color": "green",
+  "thum": "content/img/c.png"
+}, {
+  "name": "gagan",
+  "age": 28,
+  "charge": "A",
+  "color": "pink",
+  "thum": "content/img/d.png"
+}]
